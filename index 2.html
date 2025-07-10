@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honestneed | Help Starts Here</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Honestneed - A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta name="keywords" content="help, donations, aid, charity, honestneed, support, apply for aid" />
+  <meta name="author" content="Honestneed" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Honestneed | Help Starts Here" />
+  <meta property="og:description" content="A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta property="og:image" content="https://honestneed-site.vercel.app/banner.png" />
+  <meta property="og:url" content="https://honestneed-site.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honestneed | Help Starts Here" />
+  <meta name="twitter:description" content="A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta name="twitter:image" content="https://honestneed-site.vercel.app/banner.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom, #ffe3d8, #ffffff); /* soft coral gradient */
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 10px;
+      background-color: #ffffff;
+      border-bottom: 2px solid #ccc;
+    }
+    header img {
+      max-width: 200px;
+    }
+    nav {
+      background-color: #ffb199;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      color: #d35400;
+    }
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .slider {
+      max-width: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-top: 30px;
+    }
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: block;
+      animation: slide 12s infinite;
+    }
+    @keyframes slide {
+      0% { opacity: 1; }
+      33% { opacity: 0; }
+      66% { opacity: 1; }
+    }
+    .ticker {
+      background-color: #fff3ed;
+      padding: 15px;
+      border-top: 2px solid #ffb199;
+      border-bottom: 2px solid #ffb199;
+      font-size: 0.95em;
+    }
+    .featured {
+      padding: 30px;
+      background-color: #ffffff;
+    }
+    .featured h2 {
+      text-align: center;
+      color: #d35400;
+    }
+    .applicant {
+      background: #ffece6;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .applicant img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .applicant-info {
+      flex: 1;
+    }
+    footer {
+      background-color: #ffb199;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="banner.png" alt="Honestneed Banner" />
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="apply.html">Apply</a>
+    <a href="donate.html">Donate</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Help Starts Here.</h1>
+    <p>Honestneed is a platform where ordinary people become heroes by helping others through small, direct support. Since 2025, our donors have helped stop hardship for hundreds of American families on the edge of poverty. Join us in changing lives today.</p>
+  </section>
+
+  <section class="slider">
+    <img src="slider1.jpg" alt="Happy Family 1" />
+    <img src="slider2.jpg" alt="Happy Family 2" />
+    <img src="slider3.jpg" alt="Happy Family 3" />
+  </section>
+
+  <section class="ticker">
+    <p>07/10/2025 at 10:41 AM — An anonymous donor made a contribution of $500.00. Thank you!<br>
+    07/10/2025 at 09:12 AM — Jessica (Atlanta, GA) made a contribution of $100.00.<br>
+    07/09/2025 at 07:45 PM — An anonymous donor made a contribution of $20.00.<br>
+    07/09/2025 at 04:30 PM — Mark T. (Denver, CO) made a contribution of $1,000.00. Incredible!<br>
+    07/08/2025 at 11:00 AM — A donor gave $5.00. Every little bit counts.</p>
+  </section>
+
+  <section class="featured">
+    <h2>Featured Applications</h2>
+    <div class="applicant">
+      <img src="angela.jpg" alt="Angela - Mother of 2" />
+      <div class="applicant-info">
+        <strong>Angela (Detroit, MI)</strong>
+        <p>Angela is a single mother of two struggling to keep up with rent after a temporary job loss. She’s doing all she can to stay afloat and not fall behind.</p>
+        <a href="donate.html">Help Angela</a>
+      </div>
+    </div>
+    <div class="applicant">
+      <img src="david.jpg" alt="David - Disabled Vet" />
+      <div class="applicant-info">
+        <strong>David (Austin, TX)</strong>
+        <p>David is a disabled veteran facing a sudden medical bill. He’s seeking a small amount to prevent a lapse in housing assistance.</p>
+        <a href="donate.html">Help David</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Honestneed. All rights reserved.
+  </footer>
+</body>
+</html>
