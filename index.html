@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honestneed | Help Starts Here</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Honestneed - A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta name="keywords" content="help, donations, charity, honestneed, support, apply for aid" />
+  <meta name="author" content="Honestneed" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Honestneed | Help Starts Here" />
+  <meta property="og:description" content="Connecting Americans in need with kind donors. Apply, Donate, and share hope." />
+  <meta property="og:image" content="https://honestneed-site.vercel.app/banner.png" />
+  <meta property="og:url" content="https://honestneed-site.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honestneed | Help Starts Here" />
+  <meta name="twitter:description" content="Connecting Americans in need with kind donors. Apply, Donate, and share hope." />
+  <meta name="twitter:image" content="https://honestneed-site.vercel.app/banner.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #f8fbfd;
+      color: #333;
+    }
+
+    header {
+      background: url('banner.png') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #007B9E;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #007B9E;
+    }
+
+    .donations {
+      background: #eef9ff;
+      padding: 10px;
+      border-left: 4px solid #007B9E;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      background: white;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background: #007B9E;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Honestneed</h1>
+  <p>Help Starts Here — Connecting kind donors with hardworking families in crisis.</p>
+</header>
+
+<nav>
+  <a href="#about">About Us</a>
+  <a href="#featured">Featured</a>
+  <a href="#apply">Apply</a>
+  <a href="#donate">Donate</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="section">
+  <h2>What is Honestneed?</h2>
+  <p>
+    Honestneed is a grassroots, U.S.-based nonprofit that provides small, emergency grants to hardworking families at risk of slipping into poverty — those who are often overlooked by traditional aid programs.
+  </p>
+  <p>
+    Since our founding in 2024, we've helped prevent homelessness, utilities shutoffs, and food insecurity for families just one step away from crisis.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Happening Right Now!</h2>
+  <div class="donations">07/10/2025 at 10:03 AM — An anonymous donor gave $600. Thank you!</div>
+  <div class="donations">07/10/2025 at 09:20 AM — Brianna from Texas donated $25.00. Bless you!</div>
+  <div class="donations">07/10/2025 at 07:41 AM — An anonymous donor gave $5.00.</div>
+  <div class="donations">07/09/2025 at 11:00 PM — Jackson from Seattle donated $100.00.</div>
+</section>
+
+<section id="featured" class="section">
+  <h2>Featured Applications</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="featured1.jpg" alt="Angela, Chicago">
+      <h4>Angela, mom of two (Chicago)</h4>
+      <p>Angela was laid off temporarily and fell behind on rent. She works two jobs and just needs a little help to stay in her home.</p>
+      <button onclick="document.getElementById('apply').scrollIntoView()">Help Now</button>
+    </div>
+    <div class="card">
+      <img src="featured2.jpg" alt="Mark, Ohio">
+      <h4>Mark, Veteran (Ohio)</h4>
+      <p>Mark served honorably in the military but is now struggling with unexpected medical bills. He’s asking for help with just one utility bill.</p>
+      <button onclick="document.getElementById('apply').scrollIntoView()">Help Now</button>
+    </div>
+  </div>
+</section>
+
+<section id="apply" class="section">
+  <h2>Apply for Help</h2>
+  <p>If you're facing a temporary crisis, fill out the form below. We'll do our best to connect you with donors who care.</p>
+  <form action="https://formspree.io/f/xleqkgzn" method="POST">
+    <input type="text" name="Name" placeholder="Full Name" required />
+    <input type="tel" name="Phone" placeholder="Phone Number" required />
+    <input type="email" name="Email" placeholder="Email" required />
+    <textarea name="Message" placeholder="Briefly explain your situation" required></textarea>
+    <button type="submit">Submit Application</button>
+  </form>
+</section>
+
+<section id="donate" class="section">
+  <h2>Make a Donation</h2>
+  <p>Want to make a difference? Fill out the short form below and a team member will follow up with you personally.</p>
+  <form action="https://formspree.io/f/xleqkgzn" method="POST">
+    <input type="text" name="Donor Name" placeholder="Your Name" required />
+    <input type="tel" name="Phone" placeholder="Phone Number" required />
+    <input type="number" name="Amount" placeholder="Amount you’d like to give" required />
+    <button type="submit">I'm Ready to Give</button>
+  </form>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Have questions? Reach out and someone from our team will get in touch with you.</p>
+  <form action="https://formspree.io/f/xleqkgzn" method="POST">
+    <input type="text" name="Name" placeholder="Your Name" required />
+    <input type="email" name="Email" placeholder="Your Email" required />
+    <input type="tel" name="Phone" placeholder="Phone Number" required />
+    <textarea name="Message" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Honestneed. Built with compassion for the people of the United States.</p>
+</footer>
+
+</body>
+</html>
