@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Honestneed | Help Starts Here</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Honestneed - A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta name="keywords" content="help, donations, aid, charity, honestneed, support, apply for aid" />
+  <meta name="author" content="Honestneed" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Honestneed | Help Starts Here" />
+  <meta property="og:description" content="A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta property="og:image" content="https://honestneed-site.vercel.app/banner.png" />
+  <meta property="og:url" content="https://honestneed-site.vercel.app" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Honestneed | Help Starts Here" />
+  <meta name="twitter:description" content="A platform connecting people in need with generous donors. Apply, Donate, and share hope." />
+  <meta name="twitter:image" content="https://honestneed-site.vercel.app/banner.png" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(to bottom, #ffe3d8, #ffffff);
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffffcc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .banner {
+      background: url('banner.png') center/cover no-repeat;
+      padding: 80px 20px;
+      text-align: center;
+      color: white;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .banner a {
+      background: #ff6600;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      height: 250px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .slider img {
+      min-width: 100%;
+      transition: transform 1s ease;
+      border-radius: 8px;
+    }
+
+    .donation-feed {
+      font-family: monospace;
+      background: #fff4ee;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      max-height: 180px;
+      overflow-y: auto;
+    }
+
+    .donation-feed div {
+      margin-bottom: 10px;
+    }
+
+    .featured-applicants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .applicant-card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .testimonial-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .testimonial {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .testimonial img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      33% { transform: translateX(-100%); }
+      66% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    .slider-inner {
+      display: flex;
+      animation: slide 12s infinite;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="honestneed-logo.png" alt="Honestneed Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="apply.html">Apply for Help</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h1>When We Lift One Person, We Elevate Communities</h1>
+    <p>Your support helps hardworking families avoid crisis and regain stability.</p>
+    <a href="donate.html">Donate Now</a>
+  </section>
+
+  <section class="slider section">
+    <div class="slider-inner">
+      <img src="slider1.jpg" alt="Happy Family 1" />
+      <img src="slider2.jpg" alt="Happy Family 2" />
+      <img src="slider3.jpg" alt="Happy Family 3" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Happening Right Now!</h2>
+    <div class="donation-feed" id="donationFeed"></div>
+  </section>
+
+  <section class="section">
+    <h2>Featured Applications</h2>
+    <div class="featured-applicants">
+      <div class="applicant-card">
+        <h3>Single Mom Facing Eviction</h3>
+        <p>Monica from Dallas, TX needs $540 to cover overdue rent after a sudden job loss.</p>
+        <a href="apply.html">Help Now</a>
+      </div>
+      <div class="applicant-card">
+        <h3>Veteran Needs Utility Support</h3>
+        <p>James from Tampa, FL needs $220 to restore electricity after a delay in veteran benefits.</p>
+        <a href="apply.html">Help Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Success Stories</h2>
+    <div class="testimonial-section">
+      <div class="testimonial">
+        <img src="angela.jpg" alt="Angela">
+        <div>
+          <strong>Angela, single mother of 2</strong><br>
+          “I had no hope left. Honestneed gave me and my kids another chance at life. Thank you!”
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="user1.jpg" alt="Testimonial">
+        <div>
+          <strong>David, New York</strong><br>
+          “I couldn’t believe strangers would help me. You restored my faith in humanity.”
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="user2.jpg" alt="Testimonial">
+        <div>
+          <strong>Lisa, Georgia</strong><br>
+          “Just a few dollars changed everything. Now I’m back on my feet. Forever grateful.”
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Honestneed. All Rights Reserved.
+  </footer>
+
+  <script>
+    const feed = document.getElementById('donationFeed');
+    const entries = [
+      "07/10/2025 at 10:14 AM — Anonymous donated $350.00. Thank you!",
+      "07/10/2025 at 09:45 AM — John from Ohio donated $75.00. Thank you!",
+      "07/09/2025 at 07:12 PM — Cynthia from Chicago donated $20.00. Thank you!",
+      "07/09/2025 at 03:22 PM — Angela donated $100.00. Thank you!",
+      "07/08/2025 at 10:10 AM — David from New York donated $150.00. Thank you!"
+    ];
+    entries.forEach(e => {
+      const div = document.createElement('div');
+      div.textContent = e;
+      feed.appendChild(div);
+    });
+  </script>
+</body>
+</html>
