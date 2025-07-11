@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Honestneed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #fff3eb;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #f7c59f;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+      color: #444;
+    }
+    nav a:hover {
+      color: #f97300;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #f97300;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #f97300;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #e86400;
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="honestneed-logo.png" alt="Honestneed Logo" style="height: 40px;" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="apply.html">Apply for Help</a>
+    <a href="donate.html">Donate</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section">
+  <h1>Make a Donation</h1>
+  <form action="https://formspree.io/f/meokykwr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="number" name="amount" placeholder="Donation Amount (USD)" required />
+    <button type="submit">Submit Donation</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 Honestneed. All rights reserved.
+</footer>
+
+</body>
+</html>
