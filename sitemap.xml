@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://honestneed-site.vercel.app/</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://honestneed-site.vercel.app/about.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://honestneed-site.vercel.app/apply.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://honestneed-site.vercel.app/donate.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://honestneed-site.vercel.app/testimonials.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://honestneed-site.vercel.app/contact.html</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
